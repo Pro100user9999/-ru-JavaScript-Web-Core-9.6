@@ -4,13 +4,164 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    <title>Lesson9</title>
   </head>
-  <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Welcome to Webpack 5 starter </h3>
-  </body>
+<body>
+    <!-- Блок шапки -->
+    <header class="header">
+        <div class="header__menu">
+            <div class="header__menu__left">
+                <button class="header__button--burger" type="button">
+                    <img src="./img/burger.svg" alt="Открыть меню" class="header__icon--burger">
+                </button>
+                <div class="header__vertical__line__next"></div>
+                <img src="./img/Group.svg" alt="Логотип" class="header__icon--logo">
+            </div>
+            <div class="header__block__right">
+                
+                <div class="header__actions">
+                    <button class="header__button--call" type="button">
+                    <img src="./img/call.svg" alt="Позвонить" class="header__icon--call">
+                    </button>
+                    <button class="header__button--chat" type="button">
+                    <img src="./img/chat.svg" alt="Служба подджки" class="header__icon--chat">
+                    </button>
+                    <button class="header__button--profile" type="button">
+                    <img src="./img/profile.svg" alt="Профиль" class="header__icon--profile">
+                    </button>
+                </div>
+                <div class="header__vertical__line"></div>
+                <div class="header__menu__right">
+                    <button class="header__button--repair" type="button">
+                    <img src="./img/repair.svg" alt="Ремонт" class="header__icon--repair">
+                    </button>
+                    <button class="header__button--check" type="button">
+                    <img src="./img/checkstatus.svg" alt="Статус" class="header__icon--check">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <!-- Блок заголовка и навигацуи -->
+        <section class="services">
+            <div class="services__block">
+                <h1 class="services-tittle">Услуги и сервисы</h1>
+                <div class="services__block__pc">
+                    <button type="button" class="services__button">
+                        <span class="services__block__text services__block__text1">
+                            Оставить заявку
+                        </span>
+                        <img src="./img/repair.svg" alt="Ремонт" class="services__icon services__icon--repair">
+                    </button>
+                    <button type="button" class="services__button">
+                        <span class="services__block__text services__block__text2">
+                            Статус ремонта
+                        </span>
+                        <img src="./img/checkstatus.svg" alt="Статус" class="services__icon services__icon--check">
+                    </button>
+                </div>
+            </div>
+            <nav class="services__nav">
+                <ul class="services__list">
+                    <li class="services__item">
+                        <button class="services__button services__button--active">
+                            Ремонтируемые устройства
+                        </button>
+                    </li>
+                    <li class="services__item">
+                        <button class="services__button" type="button">
+                            Дополнительные услуги
+                        </button>
+                    </li>
+                    <li class="services__item">
+                        <button class="services__button" type="button">
+                            Цены на услуги
+                        </button>
+                    </li>
+                    <li class="services__item">
+                        <button class="services__button" type="button">
+                            Адреса сервисных центров
+                        </button>
+                    </li>
+                    <li class="services__item">
+                        <button class="services__button" type="button">
+                            Специальные цены
+                        </button>
+                    </li>
+                    <li class="services__item">
+                        <button class="services__button" type="button">
+                            Отзывы
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!-- второй блок описание -->
+        <section class="about">
+            <div class="about__content">
+                <div class="about__content-text">
+                    <p class="about__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только
+                        у нас вы можете
+                        отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                    <p class="about__text--next">
+                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
+                        большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                        и, в свою очередь, советуют нас родным и близким.
+                    </p>
+                    <button type="button" class="about__button"><img src="./img/icon.svg" class="about__button--icon"
+                            alt="стрелка вниз">
+                        <span class="about__button__text">
+                            Читать далее
+                        </span>
+                    </button>
+                </div>
+                <div class="about__content_image">
+                    <img src="./img/MG_3223.png" alt="picture for text" class="about__image">
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="swipe__block">
+
+    <div class="swiper__block__tittle">
+      Ремонт техники различных брендов
+    </div>
+  <!-- Slider main container -->
+  <div class="swiper" id="mobileSwiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="./img/swipe/lenovo.png" alt="lenova"></div>
+      <div class="swiper-slide"><img src="./img/swipe/samsung.png" alt="samsun"></div>
+      <div class="swiper-slide"><img src="./img/swipe/apple.png" alt="apple"></div>
+      <div class="swiper-slide"><img src="./img/swipe/viewsonic.png" alt="viewsonic"></div>
+      <div class="swiper-slide"><img src="./img/swipe/bosh.png" alt="bosh"></div>
+      <div class="swiper-slide"><img src="./img/swipe/hp.png" alt="hp"></div>
+      <div class="swiper-slide hidden"><img src="./img/swipe/acer.png" alt="acer"></div>
+      <div class="swiper-slide hidden"><img src="./img/swipe/sony.png" alt="sony"></div>
+      <div class="swiper-slide hidden slide--hidden"><img src="./img/swipe/lenovo.png" alt="lenovo"></div>
+      <div class="swiper-slide hidden slide--hidden"><img src="./img/swipe/samsung.png" alt="samsung"></div>
+      <div class="swiper-slide hidden slide--hidden"><img src="./img/swipe/apple.png" alt="apple"></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+  </div>
+  </div>
+  <div class="button__container">
+    <button class="button__hidden" type="button" id="mybutton">
+      <img src="./img/swipe/expand_down.png" alt="Развернуть" id="arrowIcon">
+      Показать все
+    </button>
+
+    </section>
+</body>
+
 </html>
