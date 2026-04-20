@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+.button__hidden,
+    #arrowIcon {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin: 0;
+        border: none;
+        vertical-align: middle;
+        background: none;
+    }
+
+    .button__container {
+        border: none;
+        display: flex;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .button__hidden,
+    #arrowIcon {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin: 0;
+        border: none;
+        vertical-align: middle;
+        background: none;
+    }
+}

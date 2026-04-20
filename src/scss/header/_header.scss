@@ -1,0 +1,129 @@
+.header {
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.4rem;
+  height: 88px;
+  box-sizing: border-box;
+}
+
+.header__menu__left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header__button--burger {
+  background: none;
+  border: none;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+.header__button--burger:focus {
+    transform: rotateY(180deg);
+    
+    
+}
+
+.header__vertical__line {
+  width: 1px;
+  height: 32px;
+  background-color: #e0e0e0;
+}
+.header__vertical__line__next {
+    display: none;
+}
+
+
+.header__menu__right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__actions {
+    display: none;
+}
+
+.header__vertical__line {
+    display: flex;
+    border-left: 2px solid #c0bbbb;
+    height: 32px;
+    border-radius: 1px;
+}
+.header__block__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.header__icon--logo {
+    display: flex;
+    flex-shrink: 0;
+    width: 100px;
+}
+.header__button--call:focus, .header__button--chat:focus, .header__button--profile:focus, .header__button--repair:focus, .header__button--check:focus, .about__button:focus {
+    transform: scale(1.2);
+}
+
+@media(min-width: 768px) {
+
+    .header__menu__left {
+        display: flex;
+        gap: 1rem;
+    }
+    .header__icon--burger {
+    padding: 0 6px 0 0;
+    }
+    .header {
+       margin: 0;
+       padding: 0 1rem;
+    }
+     .header__menu {
+        display: flex;
+        align-items: center;
+        gap: 8rem;
+        padding: 0 1rem 0 0;
+     }
+    .header__icon--logo {
+        width: 100px;
+        flex-shrink: 0;
+    }
+    .header__actions {
+        display: flex;
+        gap: 0.5rem;
+    }
+    .header__menu__right {
+        display: flex;
+        gap: 0.5rem;
+    }
+    .header__block__right {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 2rem;
+    }
+    .header__vertical__line__next {
+        display: flex;
+        width: 1px;
+        height: 32px;
+        background-color: #e0e0e0;
+        border-left: 2px solid #c0bbbb;
+        border-radius: 1px;
+    }
+  }
+  @media (min-width: 1120px) {
+    .header {
+        display: none;
+    }
+  }
