@@ -1,6 +1,13 @@
 let mySwiper = null;
 
-function initSwiper() {
+function destroySwiper() {
+  if (mySwiper) {
+    mySwiper.destroy(true, true);
+    mySwiper = null;
+  }
+}
+
+function resizeHandler() {
   // Инициализируем Swiper только на мобильных (< 768px)
   if (window.innerWidth < 768) {
     if (!mySwiper) {
@@ -22,19 +29,31 @@ function initSwiper() {
         },
       });
     }
+  } else if (window.innerWidth < 1024) {
+    destroySwiper();
+    document
+      .querySelectorAll(".swiper-wrapper .swiper-slide:nth-last-child(-n + 5)")
+      .forEach((slide) => {
+        slide.classList.add("hidden", "slide--hidden");
+      });
+  } else  {
+    destroySwiper();
+    document
+      .querySelectorAll(".swiper-wrapper .swiper-slide:nth-last-child(-n + 5)")
+      .forEach((slide) => {
+        slide.classList.remove("hidden", "slide--hidden");
+      });
+    document
+      .querySelectorAll(".swiper-wrapper .swiper-slide:nth-last-child(-n + 3)")
+      .forEach((slide) => {
+        slide.classList.add("hidden", "slide--hidden");
+      });
   }
-  // Уничтожаем Swiper на планшете и десктопе (≥ 768px)
-  else if (mySwiper) {
-    mySwiper.destroy(true, true);
-    mySwiper = null;
-  }
+ 
 }
 
-// Инициализация при загрузке
-initSwiper();
-
 // Пересоздание при изменении размера окна
-window.addEventListener("resize", initSwiper);
+window.addEventListener("resize", resizeHandler);
 
 let isShown = false;
 document.querySelector("#mybutton").addEventListener("click", () => {
@@ -57,7 +76,7 @@ document.querySelector("#mybutton").addEventListener("click", () => {
           ".swiper-wrapper .swiper-slide:nth-last-child(-n + 5)",
         )
         .forEach((slide) => {
-          slide.classList.add("hidden");
+          slide.classList.add("hidden", "slide--hidden");
         });
     }
 
