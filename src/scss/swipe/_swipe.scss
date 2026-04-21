@@ -1,3 +1,5 @@
+@import 'swiper/css/bundle';
+
 .swipe__block {
     display: grid;
     padding: 8rem 1rem 0 2.2rem;
@@ -36,9 +38,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: #F8F8F8;
     color: rgb(5, 5, 5);
 
@@ -61,6 +60,14 @@
 
     .swiper-slide {
         height: 150px;
+        background: #F8F8F8;
+        border-radius: 10px;
+    }
+
+    .swiper-slide img {
+        max-width: 80%;
+        max-height: 80%;
+        object-fit: contain;
     }
 
 }
@@ -102,8 +109,8 @@
         display: none !important;
     }
 
-    .hidden {
-        display: none;
+    .slide--hidden {
+        display: none !important;
     }
 }
 
@@ -142,11 +149,7 @@
         display: none !important;
     }
 
-    .hidden {
-        display: flex;
-    }
-
     .slide--hidden {
-        display: none;
+        display: none !important;
     }
 }

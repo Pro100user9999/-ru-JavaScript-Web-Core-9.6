@@ -39,21 +39,21 @@ const initMobileSwiper = () => {
     const slides = document.querySelectorAll(".swiper-wrapper .swiper-slide");
     
     // Сначала сбрасываем всё
-    slides.forEach(s => s.classList.remove("hidden", "slide--hidden"));
+    slides.forEach(s => s.classList.remove("slide--hidden"));
 
     if (width >= 768 && width < 1024) {
       document.querySelectorAll(".swiper-wrapper .swiper-slide:nth-last-child(-n + 5)")
-        .forEach(s => s.classList.add("hidden", "slide--hidden"));
+        .forEach(s => s.classList.add("slide--hidden"));
     } else if (width >= 1024) {
       document.querySelectorAll(".swiper-wrapper .swiper-slide:nth-last-child(-n + 3)")
-        .forEach(s => s.classList.add("hidden", "slide--hidden"));
+        .forEach(s => s.classList.add("slide--hidden"));
     }
   }
 
   // Клик по кнопке "Показать все / Скрыть"
   btn.addEventListener("click", () => {
     const width = window.innerWidth;
-    const hiddenSlides = document.querySelectorAll(".swiper-wrapper .swiper-slide.hidden, .swiper-wrapper .swiper-slide.slide--hidden");
+    const hiddenSlides = document.querySelectorAll(".swiper-wrapper .swiper-slide.slide--hidden");
     const allSlides = document.querySelectorAll(".swiper-wrapper .swiper-slide");
 
     if (isShown) {
@@ -63,7 +63,7 @@ const initMobileSwiper = () => {
       isShown = false;
     } else {
       // Показываем всё
-      allSlides.forEach(s => s.classList.remove("hidden", "slide--hidden"));
+      allSlides.forEach(s => s.classList.remove("slide--hidden"));
       btn.innerHTML = "<img id='arrowIcon' src='./img/swipe/expand_up.png' alt='скрыть'>Скрыть";
       isShown = true;
     }
