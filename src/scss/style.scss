@@ -4,3 +4,10 @@
 @import './about/about';
 @import './swipe/swipe';
 @import './swipebutton/swipebutton';
+@import './swipe2/_swipe2';
+@import './body2/body2';
+
+.swiper, .swiper2 {
+    display: grid;
+    padding: 2.5rem 1rem 0 2.2rem;
+}
