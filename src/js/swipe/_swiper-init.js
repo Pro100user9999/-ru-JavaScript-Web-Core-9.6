@@ -6,7 +6,7 @@ let isShown = false;
 
 const initMobileSwiper = () => {
   const btn = document.querySelector("#mybutton");
-  if (!btn) return; // Защита, если кнопки нет на странице
+  if (!btn) return; 
 
   function destroySwiper() {
     if (mySwiper) {

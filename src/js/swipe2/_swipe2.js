@@ -1,12 +1,11 @@
 import Swiper from 'swiper/bundle';
 
-// Переносим переменные в область видимости функции
 let mySwiper = null;
 let isShown = false;
 
 const initMobileSwiper = () => {
   const btn = document.querySelector("#mybutton2");
-  if (!btn) return; // Защита, если кнопки нет на странице
+  if (!btn) return; 
 
   function destroySwiper() {
     if (mySwiper) {
@@ -24,6 +23,8 @@ const initMobileSwiper = () => {
         mySwiper = new Swiper(".swiper2", {
           direction: "horizontal",
           loop: true,
+          wrapperClass: "swiper-wrapper2",
+          slideClass: "swiper-slide2",
           slidesPerView: 1,
           spaceBetween: 10,
           pagination: { el: ".swiper-pagination2", clickable: true },
@@ -56,18 +57,18 @@ const initMobileSwiper = () => {
     if (isShown) {
       // Скрываем обратно
       resizeHandler(); 
-      btn.innerHTML = "<img id='arrowIcon' src='./img/swipe2/expand_down.png' alt='раскрыть'>Показать все";
+      btn.innerHTML = "<img id='arrowIcon2' src='./img/swiper2/expand_down.png' alt='раскрыть'> Показать все";
       isShown = false;
     } else {
       // Показываем всё
       allSlides.forEach(s => s.classList.remove("slide--hidden2"));
-      btn.innerHTML = "<img id='arrowIcon' src='./img/swipe2/expand_up.png' alt='скрыть'>Скрыть";
+      btn.innerHTML = "<img id='arrowIcon2' src='./img/swiper2/expand_up.png' alt='скрыть'> Скрыть";
       isShown = true;
     }
   });
 
   window.addEventListener("resize", resizeHandler);
-  resizeHandler(); // Первый запуск
+  resizeHandler(); 
 };
 
 export default initMobileSwiper;

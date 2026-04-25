@@ -1,0 +1,23 @@
+.site__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+.site__footer__copyright {
+    display: flex;
+    justify-self: start;
+    color: #666;
+}
+
+.site__footer__offer {
+    display: flex;
+    justify-self: end;
+    color: #666;
+}
+.site__footer__privacy {
+    display: flex;
+    justify-self: center;
+    color: #666;
+}
