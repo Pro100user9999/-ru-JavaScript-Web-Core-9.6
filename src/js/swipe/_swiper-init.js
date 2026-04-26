@@ -9,8 +9,15 @@ const initMobileSwiper = () => {
   if (!btn) return;
 
   function destroySwiper() {
+    console.log(mySwiper)
     if (mySwiper) {
-      mySwiper.destroy(true, true);
+      if(Array.isArray(mySwiper)){
+        mySwiper.forEach(v => v.destroy(true, true))
+      }else {
+
+        mySwiper.destroy(true, true)
+      }
+      // mySwiper.destroy(true, true);
       mySwiper = null;
     }
   }
