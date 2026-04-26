@@ -22,7 +22,7 @@ const initMobileSwiper = () => {
       if (!mySwiper) {
         mySwiper = new Swiper(".swiper2", {
           direction: "horizontal",
-          loop: true,
+          loop: false,
           wrapperClass: "swiper-wrapper2",
           slideClass: "swiper-slide2",
           slidesPerView: 1,
@@ -40,18 +40,18 @@ const initMobileSwiper = () => {
     const slides = document.querySelectorAll(".swiper-wrapper2 .swiper-slide2");
     
     // Сначала сбрасываем всё
-    slides.forEach(s => s.classList.remove("slide--hidden2"));
-
-    if (width >= 1024) {
-      document.querySelectorAll(".swiper-wrapper2 .swiper-slide2:nth-last-child(-n + 3)")
-        .forEach(s => s.classList.add("slide--hidden2"));
+    slides.forEach(s => s.classList.remove("hidden2"));
+    console.log("это свайп 2")
+    if (width >= 768) {
+      document.querySelectorAll(".swiper-wrapper2 .swiper-slide2:nth-last-child(-n + 1)")
+        .forEach(s => s.classList.add("hidden2"));
     }
   }
 
   // Клик по кнопке "Показать все / Скрыть"
   btn.addEventListener("click", () => {
     const width = window.innerWidth;
-    const hiddenSlides = document.querySelectorAll(".swiper-wrapper2 .swiper-slide2.slide--hidden2");
+    const hiddenSlides = document.querySelectorAll(".swiper-wrapper2 .swiper-slide2 .hidden2");
     const allSlides = document.querySelectorAll(".swiper-wrapper2 .swiper-slide2");
 
     if (isShown) {
@@ -61,7 +61,7 @@ const initMobileSwiper = () => {
       isShown = false;
     } else {
       // Показываем всё
-      allSlides.forEach(s => s.classList.remove("slide--hidden2"));
+      allSlides.forEach(s => s.classList.remove("hidden2"));
       btn.innerHTML = "<img id='arrowIcon2' src='./img/swiper2/expand_up.png' alt='скрыть'> Скрыть";
       isShown = true;
     }

@@ -1,3 +1,5 @@
+import Swiper from 'swiper/bundle';
+
 let mySwiper = null;
 
 function destroySwiper() {
@@ -13,7 +15,7 @@ function resizeHandler() {
     if (!mySwiper) {
       mySwiper = new Swiper(".swiper", {
         direction: "horizontal",
-        loop: true,
+        loop: false,
         slidesPerView: 1,
         spaceBetween: 10,
         pagination: {
@@ -92,3 +94,5 @@ document.querySelector("#mybutton").addEventListener("click", () => {
     isShown = true;
   }
 });
+
+export default initMobileSwiper;

@@ -6,7 +6,7 @@ let isShown = false;
 
 const initMobileSwiper = () => {
   const btn = document.querySelector("#mybutton");
-  if (!btn) return; 
+  if (!btn) return;
 
   function destroySwiper() {
     if (mySwiper) {
@@ -23,7 +23,7 @@ const initMobileSwiper = () => {
       if (!mySwiper) {
         mySwiper = new Swiper(".swiper", {
           direction: "horizontal",
-          loop: true,
+          loop: false,
           slidesPerView: 1,
           spaceBetween: 10,
           pagination: { el: ".swiper-pagination", clickable: true },

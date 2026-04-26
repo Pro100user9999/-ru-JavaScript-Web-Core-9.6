@@ -15,7 +15,7 @@ const initMobileSwiper3 = () => {
       if (!mySwiper) {
         mySwiper = new Swiper(".swiper3", {
           direction: "horizontal",
-          loop: true,
+          loop: false,
           wrapperClass: "swiper-wrapper3",
           slideClass: "swiper-slide3",
           slidesPerView: 1,

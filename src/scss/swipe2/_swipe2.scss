@@ -139,7 +139,11 @@
         padding: 15px;
     }
 
-    .slide--hidden2 {
+    .swiper-slide2 {
+        display: flex !important;
+    }
+
+    .hidden2 {
         display: none !important;
     }
 
@@ -192,7 +196,7 @@
         background: none;
     }
 
-    .slide--hidden2 {
+    .swiper-slide2 {
         display: flex !important;
     }
 

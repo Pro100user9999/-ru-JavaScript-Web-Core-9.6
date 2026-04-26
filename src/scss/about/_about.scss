@@ -38,7 +38,6 @@
         min-height: 259px;
         padding: 1rem 0 1rem 0;
         overflow: hidden;
-        position: absolute;
 }
 .about__image {
         width: 100%;
@@ -115,10 +114,7 @@
        
 
     }
-    /* .about__text, .about__button {
-        margin: 0;
-        padding: 0;
-    } */
+
 
     .about__text--next {
         display: flex;
