@@ -11,8 +11,49 @@
 </head>
 
 <body>
+      <div class="page">
+    <aside class="mobile-menu" id="mobileMenu" aria-label="Меню сайта">
+      <div class="mobile-menu__header">
+        <button class="round-button mobile-menu__close" type="button" aria-label="Закрыть меню">
+          <span class="round-button__cross"><img src="./img/sidebar/burger.svg" alt="закрыть меню"></span>
+        </button>
+        <img class="mobile-menu__logo" src="./img/sidebar/Group.png" alt="CPS">
+        <button class="round-button mobile-menu__search" type="button" aria-label="Поиск">
+          <span class="round-button__search"><img src="./img/sidebar/search.svg" alt="поиск"></span>
+        </button>
+      </div>
+
+      <nav class="mobile-menu__nav">
+        <a class="mobile-menu__link mobile-menu__link--active" href="#">Ремонт техники</a>
+        <a class="mobile-menu__link" href="#">Услуги и сервисы</a>
+        <a class="mobile-menu__link" href="#">Корпоративным клиентам</a>
+        <a class="mobile-menu__link" href="#">Продавцам техники</a>
+        <a class="mobile-menu__link" href="#">Партнерам</a>
+        <a class="mobile-menu__link" href="#">Производителям</a>
+        <a class="mobile-menu__link" href="#">Наши сервисные центры</a>
+        <a class="mobile-menu__link" href="#">Контакты</a>
+      </nav>
+
+      <div class="mobile-menu__footer">
+        <div class="mobile-menu__actions">
+          <button class="round-button" type="button" aria-label="Позвонить"><img src="./img/sidebar/call.svg" alt=""></button>
+          <button class="round-button" type="button" aria-label="Написать"><img src="./img/sidebar/chat.svg" alt=""></button>
+          <button class="round-button" type="button" aria-label="Профиль"><img src="./img/sidebar/profile.svg" alt=""></button>
+        </div>
+        <a class="mobile-menu__mail" href="mailto:mail@cps.com">mail@cps.com</a>
+        <a class="mobile-menu__phone" href="tel:+78008908900">8 800 890 8900</a>
+        <div class="mobile-menu__langs">
+          <button class="mobile-menu__lang mobile-menu__lang--active" type="button">RU</button>
+          <button class="mobile-menu__lang" type="button">EN</button>
+          <button class="mobile-menu__lang" type="button">CH</button>
+        </div>
+      </div>
+    </aside>
+
+    <div class="page__overlay" data-menu-overlay></div>
     <!-- Блок шапки -->
-    <header class="header">
+     <div class="page__content">
+        <header class="header">
         <div class="header__menu">
             <div class="header__menu__left">
                 <button class="header__button--burger" type="button">
@@ -45,8 +86,8 @@
                 </div>
             </div>
         </div>
-    </header>
-    <main class="main-content">
+        </header>
+        <main class="main-content">
         <!-- Блок заголовка и навигацуи -->
         <section class="services">
             <div class="services__block">
@@ -125,8 +166,8 @@
                 </div>
             </div>
         </section>
-    </main>
-    <div class="block__all__swipe">
+        </main>
+        <div class="block__all__swipe">
         <section class="swipe__block">
             <div class="swiper__block__tittle">
                 Ремонт техники различных брендов
@@ -255,9 +296,9 @@
                         alt="offer"></div>
             </div>
         </section>
-    </div>
+        </div>
 
-    <footer class="site__footer">
+        <footer class="site__footer">
         <p class="site__footer__copyright">
             © 2019 CPS
             Разработано командой Apesong
@@ -269,7 +310,8 @@
             Информация, размещенная на данной странице, не является публичной офертой
         </p>
 
-    </footer>
+        </footer>
+    </div>
 
 </body>
 

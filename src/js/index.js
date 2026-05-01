@@ -1,4 +1,5 @@
 import '../scss/style.scss'
+import './burgerMenu';
 
 console.log('It works!')
 import initMobileSwiper from './swipe/_swiper-init';
