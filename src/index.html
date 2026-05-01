@@ -11,307 +11,319 @@
 </head>
 
 <body>
-      <div class="page">
-    <aside class="mobile-menu" id="mobileMenu" aria-label="Меню сайта">
-      <div class="mobile-menu__header">
-        <button class="round-button mobile-menu__close" type="button" aria-label="Закрыть меню">
-          <span class="round-button__cross"><img src="./img/sidebar/burger.svg" alt="закрыть меню"></span>
-        </button>
-        <img class="mobile-menu__logo" src="./img/sidebar/Group.png" alt="CPS">
-        <button class="round-button mobile-menu__search" type="button" aria-label="Поиск">
-          <span class="round-button__search"><img src="./img/sidebar/search.svg" alt="поиск"></span>
-        </button>
-      </div>
-
-      <nav class="mobile-menu__nav">
-        <a class="mobile-menu__link mobile-menu__link--active" href="#">Ремонт техники</a>
-        <a class="mobile-menu__link" href="#">Услуги и сервисы</a>
-        <a class="mobile-menu__link" href="#">Корпоративным клиентам</a>
-        <a class="mobile-menu__link" href="#">Продавцам техники</a>
-        <a class="mobile-menu__link" href="#">Партнерам</a>
-        <a class="mobile-menu__link" href="#">Производителям</a>
-        <a class="mobile-menu__link" href="#">Наши сервисные центры</a>
-        <a class="mobile-menu__link" href="#">Контакты</a>
-      </nav>
-
-      <div class="mobile-menu__footer">
-        <div class="mobile-menu__actions">
-          <button class="round-button" type="button" aria-label="Позвонить"><img src="./img/sidebar/call.svg" alt=""></button>
-          <button class="round-button" type="button" aria-label="Написать"><img src="./img/sidebar/chat.svg" alt=""></button>
-          <button class="round-button" type="button" aria-label="Профиль"><img src="./img/sidebar/profile.svg" alt=""></button>
-        </div>
-        <a class="mobile-menu__mail" href="mailto:mail@cps.com">mail@cps.com</a>
-        <a class="mobile-menu__phone" href="tel:+78008908900">8 800 890 8900</a>
-        <div class="mobile-menu__langs">
-          <button class="mobile-menu__lang mobile-menu__lang--active" type="button">RU</button>
-          <button class="mobile-menu__lang" type="button">EN</button>
-          <button class="mobile-menu__lang" type="button">CH</button>
-        </div>
-      </div>
-    </aside>
-
-    <div class="page__overlay" data-menu-overlay></div>
-    <!-- Блок шапки -->
-     <div class="page__content">
-        <header class="header">
-        <div class="header__menu">
-            <div class="header__menu__left">
-                <button class="header__button--burger" type="button">
-                    <img src="./img/burger.svg" alt="Открыть меню" class="header__icon--burger">
+    <div class="page">
+        <aside class="mobile-menu" id="mobileMenu" aria-label="Меню сайта">
+            <div class="mobile-menu__header">
+                <button class="round-button mobile-menu__close" type="button" aria-label="Закрыть меню">
+                    <span class="round-button__cross"><img src="./img/sidebar/burger.svg" alt="закрыть меню"></span>
                 </button>
-                <div class="header__vertical__line__next"></div>
-                <img src="./img/Group.svg" alt="Логотип" class="header__icon--logo">
+                <img class="mobile-menu__logo" src="./img/sidebar/Group.png" alt="CPS">
+                <button class="round-button mobile-menu__search" type="button" aria-label="Поиск">
+                    <span class="round-button__search"><img src="./img/sidebar/search.svg" alt="поиск"></span>
+                </button>
             </div>
-            <div class="header__block__right">
 
-                <div class="header__actions">
-                    <button class="header__button--call" type="button">
-                        <img src="./img/call.svg" alt="Позвонить" class="header__icon--call">
-                    </button>
-                    <button class="header__button--chat" type="button">
-                        <img src="./img/chat.svg" alt="Служба подджки" class="header__icon--chat">
-                    </button>
-                    <button class="header__button--profile" type="button">
-                        <img src="./img/profile.svg" alt="Профиль" class="header__icon--profile">
-                    </button>
-                </div>
-                <div class="header__vertical__line"></div>
-                <div class="header__menu__right">
-                    <button class="header__button--repair" type="button">
-                        <img src="./img/repair.svg" alt="Ремонт" class="header__icon--repair">
-                    </button>
-                    <button class="header__button--check" type="button">
-                        <img src="./img/checkstatus.svg" alt="Статус" class="header__icon--check">
-                    </button>
-                </div>
-            </div>
-        </div>
-        </header>
-        <main class="main-content">
-        <!-- Блок заголовка и навигацуи -->
-        <section class="services">
-            <div class="services__block">
-                <h1 class="services-tittle">Услуги и сервисы</h1>
-                <div class="services__block__pc">
-                    <button type="button" class="services__button">
-                        <span class="services__block__text services__block__text1">
-                            Оставить заявку
-                        </span>
-                        <img src="./img/repair.svg" alt="Ремонт" class="services__icon services__icon--repair">
-                    </button>
-                    <button type="button" class="services__button">
-                        <span class="services__block__text services__block__text2">
-                            Статус ремонта
-                        </span>
-                        <img src="./img/checkstatus.svg" alt="Статус" class="services__icon services__icon--check">
-                    </button>
-                </div>
-            </div>
-            <nav class="services__nav">
-                <ul class="services__list">
-                    <li class="services__item">
-                        <button class="services__button services__button--active">
-                            Ремонтируемые устройства
-                        </button>
-                    </li>
-                    <li class="services__item">
-                        <button class="services__button" type="button">
-                            Дополнительные услуги
-                        </button>
-                    </li>
-                    <li class="services__item">
-                        <button class="services__button" type="button">
-                            Цены на услуги
-                        </button>
-                    </li>
-                    <li class="services__item">
-                        <button class="services__button" type="button">
-                            Адреса сервисных центров
-                        </button>
-                    </li>
-                    <li class="services__item">
-                        <button class="services__button" type="button">
-                            Специальные цены
-                        </button>
-                    </li>
-                    <li class="services__item">
-                        <button class="services__button" type="button">
-                            Отзывы
-                        </button>
-                    </li>
-                </ul>
+            <nav class="mobile-menu__nav">
+                <a class="mobile-menu__link mobile-menu__link--active" href="#">Ремонт техники</a>
+                <a class="mobile-menu__link" href="#">Услуги и сервисы</a>
+                <a class="mobile-menu__link" href="#">Корпоративным клиентам</a>
+                <a class="mobile-menu__link" href="#">Продавцам техники</a>
+                <a class="mobile-menu__link" href="#">Партнерам</a>
+                <a class="mobile-menu__link" href="#">Производителям</a>
+                <a class="mobile-menu__link" href="#">Наши сервисные центры</a>
+                <a class="mobile-menu__link" href="#">Контакты</a>
             </nav>
-        </section>
-        <!-- второй блок описание -->
-        <section class="about">
-            <div class="about__content">
-                <div class="about__content-text">
-                    <p class="about__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только
-                        у нас вы можете
-                        отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                    <p class="about__text--next">
-                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
-                        большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
-                        и, в свою очередь, советуют нас родным и близким.
-                    </p>
-                    <button type="button" class="about__button"><img src="./img/icon.svg" class="about__button--icon"
-                            alt="стрелка вниз">
-                        <span class="about__button__text">
-                            Читать далее
-                        </span>
-                    </button>
+
+            <div class="mobile-menu__footer">
+                <div class="mobile-menu__actions">
+                    <button class="round-button" type="button" aria-label="Позвонить"><img src="./img/sidebar/call.svg"
+                            alt=""></button>
+                    <button class="round-button" type="button" aria-label="Написать"><img src="./img/sidebar/chat.svg"
+                            alt=""></button>
+                    <button class="round-button" type="button" aria-label="Профиль"><img src="./img/sidebar/profile.svg"
+                            alt=""></button>
                 </div>
-                <div class="about__content_image">
-                    <img src="./img/MG_3223.png" alt="picture for text" class="about__image">
+                <a class="mobile-menu__mail" href="mailto:mail@cps.com">mail@cps.com</a>
+                <a class="mobile-menu__phone" href="tel:+78008908900">8 800 890 8900</a>
+                <div class="mobile-menu__langs">
+                    <button class="mobile-menu__lang mobile-menu__lang--active" type="button">RU</button>
+                    <button class="mobile-menu__lang" type="button">EN</button>
+                    <button class="mobile-menu__lang" type="button">CH</button>
                 </div>
             </div>
-        </section>
-        </main>
-        <div class="block__all__swipe">
-        <section class="swipe__block">
-            <div class="swiper__block__tittle">
-                Ремонт техники различных брендов
-            </div>
-            <!-- Slider main container -->
-            <div class="swiper" id="mobileSwiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="./img/swipe/lenovo.png" alt="lenova"></div>
-                    <div class="swiper-slide"><img src="./img/swipe/samsung.png" alt="samsun"></div>
-                    <div class="swiper-slide"><img src="./img/swipe/apple.png" alt="apple"></div>
-                    <div class="swiper-slide"><img src="./img/swipe/viewsonic.png" alt="viewsonic"></div>
-                    <div class="swiper-slide"><img src="./img/swipe/bosh.png" alt="bosh"></div>
-                    <div class="swiper-slide"><img src="./img/swipe/hp.png" alt="hp"></div>
-                    <div class="swiper-slide slide--hidden"><img src="./img/swipe/acer.png" alt="acer"></div>
-                    <div class="swiper-slide slide--hidden"><img src="./img/swipe/sony.png" alt="sony"></div>
-                    <div class="swiper-slide slide--hidden"><img src="./img/swipe/lenovo.png" alt="lenovo"></div>
-                    <div class="swiper-slide slide--hidden"><img src="./img/swipe/samsung.png" alt="samsung"></div>
-                    <div class="swiper-slide slide--hidden"><img src="./img/swipe/apple.png" alt="apple"></div>
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+        </aside>
 
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-            </div>
-            <div class="button__container">
-                <button class="button__hidden" type="button" id="mybutton">
-                    <img src="./img/swipe/expand_down.png" alt="Развернуть" id="arrowIcon">
-                    Показать все
-                </button>
-            </div>
-        </section>
-        <section class="swipe_block2">
-            <div class="swipe_block_title2">
-                Ремонт различных видов техники
-            </div>
-            <!-- Slider main container -->
-            <div class="swiper2 swiper" id="mobileSwiper2">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper2 swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide2 swiper-slide"><img src="./img/swiper2/cat1.png" alt="cat1"></div>
-                    <div class="swiper-slide2 swiper-slide"><img src="./img/swiper2/cat2.png" alt="cat2"></div>
-                    <div class="swiper-slide2 swiper-slide"><img src="./img/swiper2/cat3.png" alt="cat3"></div>
-                    <div class="swiper-slide2 swiper-slide hidden2"><img src="./img/swiper2/cat4.png" alt="cat4"></div>
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination2 swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev2 swiper-button-prev"></div>
-                <div class="swiper-button-next2 swiper-button-next"></div>
-
-            </div>
-
-            <div class="button__container2">
-                <button class="button__hidden2 button" type="button" id="mybutton2">
-                    <img src="./img/swiper2/expand_down.png" alt="Развернуть" id="arrowIcon2">
-                    Показать все
-                </button>
-            </div>
-        </section>
-        <section class="swipe__block3">
-
-            <div class="swiper__block__tittle3">
-                цены на услуги
-            </div>
-
-            <!-- Slider main container -->
-            <div class="swiper3 swiper" id="mobileSwiper3">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper3 grid-container3 swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="grid-header3">
-                        <div class="header-cell3">Ремонт</div>
-                        <div class="header-cell3">Цена</div>
-                        <div class="header-cell3">Срок</div>
-                        <div class="header-cell3"></div>
+        <div class="page__overlay" data-menu-overlay></div>
+        <!-- Блок шапки -->
+        <div class="page__content">
+            <header class="header">
+                <div class="header__menu">
+                    <div class="header__menu__left">
+                        <button class="header__button--burger" type="button">
+                            <img src="./img/burger.svg" alt="Открыть меню" class="header__icon--burger">
+                        </button>
+                        <div class="header__vertical__line__next"></div>
+                        <img src="./img/Group.svg" alt="Логотип" class="header__icon--logo">
                     </div>
-                    <div class="swiper-slide3 grid-row3">
-                        <div class="grid-cell3" data-label="Ремонт">Диагностика</div>
-                        <div class="grid-cell3" data-label="Цена">Бесплатно</div>
-                        <div class="grid-cell3" data-label="Срок">30 мин</div>
-                        <div class="grid-cell3"><img src="./img/swipe3/1.png" alt="price1"></div>
-                    </div>
-                    <div class="swiper-slide3 grid-row3">
-                        <div class="grid-cell3" data-label="Ремонт">Замена дисплея</div>
-                        <div class="grid-cell3" data-label="Цена">1 000 ₽</div>
-                        <div class="grid-cell3" data-label="Срок">30-120 мин</div>
-                        <div class="grid-cell3"><img src="./img/swipe3/2.png" alt="price2"></div>
-                    </div>
-                    <div class="swiper-slide3 grid-row3">
-                        <div class="grid-cell3" data-label="Ремонт">Замена полифонического динамика</div>
-                        <div class="grid-cell3" data-label="Цена">1 000 ₽</div>
-                        <div class="grid-cell3" data-label="Срок">30-120 мин</div>
-                        <div class="grid-cell3"><img src="./img/swipe3/3.png" alt="price3"></div>
-                    </div>
-                    <div class="swiper-slide3 grid-row3">
-                        <div class="grid-cell3" data-label="Ремонт">Тестирование с выдачей технического заключения</div>
-                        <div class="grid-cell3" data-label="Цена">1 000 ₽</div>
-                        <div class="grid-cell3" data-label="Срок">30-120 мин</div>
-                        <div class="grid-cell3"><img src="./img/swipe3/4.png" alt="price4"></div>
-                    </div>
-                    <div class="swiper-slide3 grid-row3">
-                        <div class="grid-cell3" data-label="Ремонт">Замена программного обеспечения</div>
-                        <div class="grid-cell3" data-label="Цена">1 000 ₽</div>
-                        <div class="grid-cell3" data-label="Срок">30-120 мин</div>
-                        <div class="grid-cell3"><img src="./img/swipe3/5.png" alt="price5"></div>
+                    <div class="header__block__right">
+
+                        <div class="header__actions">
+                            <button class="header__button--call" type="button">
+                                <img src="./img/call.svg" alt="Позвонить" class="header__icon--call">
+                            </button>
+                            <button class="header__button--chat" type="button">
+                                <img src="./img/chat.svg" alt="Служба подджки" class="header__icon--chat">
+                            </button>
+                            <button class="header__button--profile" type="button">
+                                <img src="./img/profile.svg" alt="Профиль" class="header__icon--profile">
+                            </button>
+                        </div>
+                        <div class="header__vertical__line"></div>
+                        <div class="header__menu__right">
+                            <button class="header__button--repair" type="button">
+                                <img src="./img/repair.svg" alt="Ремонт" class="header__icon--repair">
+                            </button>
+                            <button class="header__button--check" type="button">
+                                <img src="./img/checkstatus.svg" alt="Статус" class="header__icon--check">
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination3 swiper-pagination"></div>
+            </header>
+            <main class="main-content">
+                <!-- Блок заголовка и навигацуи -->
+                <section class="services">
+                    <div class="services__block">
+                        <h1 class="services-tittle">Услуги и сервисы</h1>
+                        <div class="services__block__pc">
+                            <button type="button" class="services__button">
+                                <span class="services__block__text services__block__text1">
+                                    Оставить заявку
+                                </span>
+                                <img src="./img/repair.svg" alt="Ремонт" class="services__icon services__icon--repair">
+                            </button>
+                            <button type="button" class="services__button">
+                                <span class="services__block__text services__block__text2">
+                                    Статус ремонта
+                                </span>
+                                <img src="./img/checkstatus.svg" alt="Статус"
+                                    class="services__icon services__icon--check">
+                            </button>
+                        </div>
+                    </div>
+                    <nav class="services__nav">
+                        <ul class="services__list">
+                            <li class="services__item">
+                                <button class="services__button services__button--active">
+                                    Ремонтируемые устройства
+                                </button>
+                            </li>
+                            <li class="services__item">
+                                <button class="services__button" type="button">
+                                    Дополнительные услуги
+                                </button>
+                            </li>
+                            <li class="services__item">
+                                <button class="services__button" type="button">
+                                    Цены на услуги
+                                </button>
+                            </li>
+                            <li class="services__item">
+                                <button class="services__button" type="button">
+                                    Адреса сервисных центров
+                                </button>
+                            </li>
+                            <li class="services__item">
+                                <button class="services__button" type="button">
+                                    Специальные цены
+                                </button>
+                            </li>
+                            <li class="services__item">
+                                <button class="services__button" type="button">
+                                    Отзывы
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <!-- второй блок описание -->
+                <section class="about">
+                    <div class="about__content">
+                        <div class="about__content-text">
+                            <p class="about__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                                Только
+                                у нас вы можете
+                                отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                            <p class="about__text--next">
+                                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что
+                                подтверждает
+                                большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+                                рекомендациям
+                                и, в свою очередь, советуют нас родным и близким.
+                            </p>
+                            <button type="button" class="about__button"><img src="./img/icon.svg"
+                                    class="about__button--icon" alt="стрелка вниз">
+                                <span class="about__button__text">
+                                    Читать далее
+                                </span>
+                            </button>
+                        </div>
+                        <div class="about__content_image">
+                            <img src="./img/MG_3223.png" alt="picture for text" class="about__image">
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <div class="block__all__swipe">
+                <section class="swipe__block">
+                    <div class="swiper__block__tittle">
+                        Ремонт техники различных брендов
+                    </div>
+                    <!-- Slider main container -->
+                    <div class="swiper" id="mobileSwiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="./img/swipe/lenovo.png" alt="lenova"></div>
+                            <div class="swiper-slide"><img src="./img/swipe/samsung.png" alt="samsun"></div>
+                            <div class="swiper-slide"><img src="./img/swipe/apple.png" alt="apple"></div>
+                            <div class="swiper-slide"><img src="./img/swipe/viewsonic.png" alt="viewsonic"></div>
+                            <div class="swiper-slide"><img src="./img/swipe/bosh.png" alt="bosh"></div>
+                            <div class="swiper-slide"><img src="./img/swipe/hp.png" alt="hp"></div>
+                            <div class="swiper-slide slide--hidden"><img src="./img/swipe/acer.png" alt="acer"></div>
+                            <div class="swiper-slide slide--hidden"><img src="./img/swipe/sony.png" alt="sony"></div>
+                            <div class="swiper-slide slide--hidden"><img src="./img/swipe/lenovo.png" alt="lenovo">
+                            </div>
+                            <div class="swiper-slide slide--hidden"><img src="./img/swipe/samsung.png" alt="samsung">
+                            </div>
+                            <div class="swiper-slide slide--hidden"><img src="./img/swipe/apple.png" alt="apple"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
 
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev3 swiper-button-prev"></div>
-                <div class="swiper-button-next3 swiper-button-next"></div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                    <div class="button__container">
+                        <button class="button__hidden" type="button" id="mybutton">
+                            <img src="./img/swipe/expand_down.png" alt="Развернуть" id="arrowIcon">
+                            Показать все
+                        </button>
+                    </div>
+                </section>
+                <section class="swipe_block2">
+                    <div class="swipe_block_title2">
+                        Ремонт различных видов техники
+                    </div>
+                    <!-- Slider main container -->
+                    <div class="swiper2 swiper" id="mobileSwiper2">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper2 swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide2 swiper-slide"><img src="./img/swiper2/cat1.png" alt="cat1"></div>
+                            <div class="swiper-slide2 swiper-slide"><img src="./img/swiper2/cat2.png" alt="cat2"></div>
+                            <div class="swiper-slide2 swiper-slide"><img src="./img/swiper2/cat3.png" alt="cat3"></div>
+                            <div class="swiper-slide2 swiper-slide hidden2"><img src="./img/swiper2/cat4.png"
+                                    alt="cat4"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination2 swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev2 swiper-button-prev"></div>
+                        <div class="swiper-button-next2 swiper-button-next"></div>
+
+                    </div>
+
+                    <div class="button__container2">
+                        <button class="button__hidden2 button" type="button" id="mybutton2">
+                            <img src="./img/swiper2/expand_down.png" alt="Развернуть" id="arrowIcon2">
+                            Показать все
+                        </button>
+                    </div>
+                </section>
+                <section class="swipe__block3">
+
+                    <div class="swiper__block__tittle3">
+                        цены на услуги
+                    </div>
+
+                    <!-- Slider main container -->
+                    <div class="swiper3 swiper" id="mobileSwiper3">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper3 grid-container3 swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="grid-header3">
+                                <div class="header-cell3">Ремонт</div>
+                                <div class="header-cell3">Цена</div>
+                                <div class="header-cell3">Срок</div>
+                                <div class="header-cell3"></div>
+                            </div>
+                            <div class="swiper-slide3 grid-row3">
+                                <div class="grid-cell3" data-label="Ремонт">Диагностика</div>
+                                <div class="grid-cell3" data-label="Цена">Бесплатно</div>
+                                <div class="grid-cell3" data-label="Срок">30 мин</div>
+                                <div class="grid-cell3"><img src="./img/swipe3/1.png" alt="price1"></div>
+                            </div>
+                            <div class="swiper-slide3 grid-row3">
+                                <div class="grid-cell3" data-label="Ремонт">Замена дисплея</div>
+                                <div class="grid-cell3" data-label="Цена">1 000 ₽</div>
+                                <div class="grid-cell3" data-label="Срок">30-120 мин</div>
+                                <div class="grid-cell3"><img src="./img/swipe3/2.png" alt="price2"></div>
+                            </div>
+                            <div class="swiper-slide3 grid-row3">
+                                <div class="grid-cell3" data-label="Ремонт">Замена полифонического динамика</div>
+                                <div class="grid-cell3" data-label="Цена">1 000 ₽</div>
+                                <div class="grid-cell3" data-label="Срок">30-120 мин</div>
+                                <div class="grid-cell3"><img src="./img/swipe3/3.png" alt="price3"></div>
+                            </div>
+                            <div class="swiper-slide3 grid-row3">
+                                <div class="grid-cell3" data-label="Ремонт">Тестирование с выдачей технического
+                                    заключения</div>
+                                <div class="grid-cell3" data-label="Цена">1 000 ₽</div>
+                                <div class="grid-cell3" data-label="Срок">30-120 мин</div>
+                                <div class="grid-cell3"><img src="./img/swipe3/4.png" alt="price4"></div>
+                            </div>
+                            <div class="swiper-slide3 grid-row3">
+                                <div class="grid-cell3" data-label="Ремонт">Замена программного обеспечения</div>
+                                <div class="grid-cell3" data-label="Цена">1 000 ₽</div>
+                                <div class="grid-cell3" data-label="Срок">30-120 мин</div>
+                                <div class="grid-cell3"><img src="./img/swipe3/5.png" alt="price5"></div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination3 swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev3 swiper-button-prev"></div>
+                        <div class="swiper-button-next3 swiper-button-next"></div>
+                    </div>
+                    <div class="additional-info">
+                        <div class="commercial-offer">Все цены указаны с учётом НДС. Стоимость ремонта указана на
+                            единичную
+                            услугу.</div>
+                        <div class="commercial-offer">Получить коммерческое предложение<img src="./img/swipe3/more.png"
+                                alt="offer"></div>
+                    </div>
+                </section>
             </div>
-            <div class="additional-info">
-                <div class="commercial-offer">Все цены указаны с учётом НДС. Стоимость ремонта указана на единичную
-                    услугу.</div>
-                <div class="commercial-offer">Получить коммерческое предложение<img src="./img/swipe3/more.png"
-                        alt="offer"></div>
-            </div>
-        </section>
+
+            <footer class="site__footer">
+                <p class="site__footer__copyright">
+                    © 2019 CPS
+                    Разработано командой Apesong
+                </p>
+                <p class="site__footer__privacy">
+                    Политика конфиденциальности
+                </p>
+                <p class="site__footer__offer">
+                    Информация, размещенная на данной странице, не является публичной офертой
+                </p>
+
+            </footer>
         </div>
-
-        <footer class="site__footer">
-        <p class="site__footer__copyright">
-            © 2019 CPS
-            Разработано командой Apesong
-        </p>
-        <p class="site__footer__privacy">
-            Политика конфиденциальности
-        </p>
-        <p class="site__footer__offer">
-            Информация, размещенная на данной странице, не является публичной офертой
-        </p>
-
-        </footer>
-    </div>
 
 </body>
 
