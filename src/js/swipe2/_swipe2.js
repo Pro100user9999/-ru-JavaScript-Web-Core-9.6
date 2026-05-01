@@ -41,7 +41,6 @@ const initMobileSwiper = () => {
     
     // Сначала сбрасываем всё
     slides.forEach(s => s.classList.remove("hidden2"));
-    console.log("это свайп 2")
     if (width >= 768) {
       document.querySelectorAll(".swiper-wrapper2 .swiper-slide2:nth-last-child(-n + 1)")
         .forEach(s => s.classList.add("hidden2"));

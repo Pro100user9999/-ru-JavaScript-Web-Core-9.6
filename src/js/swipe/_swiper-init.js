@@ -9,7 +9,6 @@ const initMobileSwiper = () => {
   if (!btn) return;
 
   function destroySwiper() {
-    console.log(mySwiper)
     if (mySwiper) {
       if(Array.isArray(mySwiper)){
         mySwiper.forEach(v => v.destroy(true, true))

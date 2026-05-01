@@ -78,7 +78,7 @@
  .grid-row3 {
   display: grid;
   grid-template-columns: 1fr;
-  align-content: start;
+  align-content: center;
   gap: 8px;
   padding: 16px;
   border-radius: 10px;
@@ -105,7 +105,7 @@
  }
 
  .swiper3 .grid-cell3 img {
-  max-width: 120px;
+  max-width: 100px;
   height: auto;
  }
 
@@ -127,13 +127,14 @@
 
  .swiper3 .grid-container3.swiper-wrapper3 {
   display: grid !important;
-  grid-template-columns: minmax(280px, 2fr) minmax(120px, 1fr) minmax(120px, 1fr) 120px;
+  grid-template-columns: 2fr 1fr 1fr auto;
   grid-template-rows: auto;
   grid-auto-rows: auto;
   width: 100%;
   height: auto !important;
   max-width: 1200px;
   margin:0;
+  gap: 0;
   border-color: #FFFFFF;
   position: static;
   transform: none !important;
@@ -141,17 +142,17 @@
 }
 
 .swiper3 .grid-header3 {
-  display: contents; 
+  display: contents;
   font-weight: bold;
-  background-color: #f0f0f0;
+  background-color: transparent;
 }
 
 .swiper3 .grid-row3 {
-  display: contents; 
+  display: contents;
 }
 
 .swiper3 .swiper-slide3 {
-  width: auto !important;
+  width: 100% !important;
   height: auto;
   position: static;
   flex-shrink: 1;
@@ -160,9 +161,9 @@
 }
 
 .swiper3 .grid-cell3, .swiper3 .header-cell3 {
-  padding: 15px;
-  border: 1px solid #ddd;
-  text-align: center;
+  padding: 18px 24px;
+  border: none;
+  text-align: left;
   line-height: 20px;
   min-width: 0;
   white-space: normal;
@@ -170,6 +171,28 @@
   word-break: normal;
   hyphens: none;
   align-content: center;
+}
+
+.swiper3 .header-cell3 {
+  padding-top: 0;
+  padding-bottom: 12px;
+}
+
+.swiper3 .grid-cell3 {
+  border-bottom: 1px solid #EAEAEA;
+  background: #FFFFFF;
+}
+
+.swiper3 .grid-cell3:nth-child(2),
+.swiper3 .grid-cell3:nth-child(3),
+.swiper3 .header-cell3:nth-child(2),
+.swiper3 .header-cell3:nth-child(3) {
+  text-align: center;
+}
+
+.swiper3 .grid-cell3:last-child, .swiper3 .header-cell3:last-child {
+  justify-self: end;
+  text-align: right;
 }
 
 .swiper3 .grid-cell3::before {
@@ -207,6 +230,10 @@
     .swiper3 .swiper-scrollbar3 {
         display: none !important;
     }
+  .swiper3 .grid-cell3 img {
+  max-width: 100px;
+  height: auto;
+ }
 }
 
 
@@ -214,7 +241,7 @@
 @media (min-width: 1024px) {
  .swiper3 .grid-container3.swiper-wrapper3 {
   display: grid !important;
-  grid-template-columns: minmax(320px, 2fr) minmax(140px, 1fr) minmax(140px, 1fr) 120px; 
+  grid-template-columns: 2fr 1fr 1fr auto;
   grid-template-rows: auto;
   grid-auto-rows: auto;
   width: 100%;
@@ -229,13 +256,13 @@
 
 
 .swiper3 .grid-row3 {
-  display: contents; 
+  display: contents;
 }
 
 .swiper3 .grid-cell3, .swiper3 .header-cell3 {
-  padding: 15px;
-  border: 1px solid #ddd;
-  text-align: center;
+  padding: 18px 24px;
+  border: none;
+  text-align: left;
   line-height: 20px;
   min-width: 0;
   white-space: normal;
@@ -245,9 +272,24 @@
   align-content: center;
 }
 
+.swiper3 .grid-cell3:nth-child(2),
+.swiper3 .grid-cell3:nth-child(3),
+.swiper3 .header-cell3:nth-child(2),
+.swiper3 .header-cell3:nth-child(3) {
+  text-align: center;
+}
+
+.swiper3 .grid-cell3:last-child, .swiper3 .header-cell3:last-child {
+  justify-self: end;
+  text-align: right;
+}
+
 .swiper3 .grid-cell3:first-child, .swiper3 .header-cell3:first-child {
   text-align: left; 
 }
-
+.swiper3 .grid-cell3 img {
+  max-width: 140px;
+  height: auto;
+ }
 
 }
