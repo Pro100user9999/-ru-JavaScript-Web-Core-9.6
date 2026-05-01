@@ -124,8 +124,26 @@
     overflow: hidden;
 }
 
- @media (min-width: 1024px) {
-    .mobile-menu {
-        display: block;
-    }
+@media (min-width: 1024px) {
+  .mobile-menu {
+    position: fixed;
+    transform: none;
+
+    width: 320px;
+    height: 100vh;
+
+    box-shadow: none;
   }
+
+  .mobile-menu__close {
+    display: none;
+  }
+
+  body {
+    padding-left: 320px;
+  }
+
+  body.menu-open {
+    overflow: auto;
+  }
+}
