@@ -64,7 +64,7 @@
   box-sizing: content-box;
  }
 
- .grid-header3 {
+ .swiper3 .grid-header3 {
   display: none;
  }
 
@@ -85,13 +85,26 @@
   background: #FFFFFF;
  }
 
- .grid-cell3 {
+ .swiper3 .grid-cell3 {
   border: none;
   padding: 0;
   text-align: left;
  }
 
- .grid-cell3 img {
+ .swiper3 .grid-cell3::before {
+  content: attr(data-label);
+  display: block;
+  margin-bottom: 4px;
+  color: #7E7E82;
+  font-size: 14px;
+  line-height: 16px;
+ }
+
+ .swiper3 .grid-cell3:not([data-label])::before {
+  content: none;
+ }
+
+ .swiper3 .grid-cell3 img {
   max-width: 120px;
   height: auto;
  }
@@ -114,7 +127,7 @@
 
  .swiper3 .grid-container3.swiper-wrapper3 {
   display: grid !important;
-  grid-template-columns: minmax(300px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr) 120px;
+  grid-template-columns: minmax(280px, 2fr) minmax(120px, 1fr) minmax(120px, 1fr) 120px;
   grid-template-rows: auto;
   grid-auto-rows: auto;
   width: 100%;
@@ -159,6 +172,10 @@
   align-content: center;
 }
 
+.swiper3 .grid-cell3::before {
+  content: none;
+}
+
 .swiper3 .grid-cell3:first-child, .swiper3 .header-cell3:first-child {
   text-align: left; 
 }
@@ -197,7 +214,7 @@
 @media (min-width: 1024px) {
  .swiper3 .grid-container3.swiper-wrapper3 {
   display: grid !important;
-  grid-template-columns: 2fr 1fr 1fr 1fr; 
+  grid-template-columns: minmax(320px, 2fr) minmax(140px, 1fr) minmax(140px, 1fr) 120px; 
   grid-template-rows: auto;
   grid-auto-rows: auto;
   width: 100%;
