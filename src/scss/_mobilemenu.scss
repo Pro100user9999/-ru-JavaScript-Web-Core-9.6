@@ -73,7 +73,7 @@
     line-height: 32px;
 }
 
-.mobile-menu__langs {
+.mobile-menu__lang {
     margin-top: 40px;
     gap: 7px;
     padding: 0;
@@ -82,9 +82,9 @@
 
 }
 
-.mobile-menu__langs:active,
-.mobile-menu__langs:hover,
-.mobile-menu__langs:focus-visible {
+.mobile-menu__lang:active,
+.mobile-menu__lang:hover,
+.mobile-menu__lang:focus-visible {
     color: #7e7e82;
 }
 
@@ -111,7 +111,7 @@
 .page__overlay {
     position: fixed;
     inset: 0;
-    z-index: 10;
+    z-index: 20;
     display: none;
     background-color: rgba(255, 255, 255, 0.9);
 }
