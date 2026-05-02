@@ -3,7 +3,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    gap: 20px;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'TT Lakes';
+    line-height: 16px;
 }
 .site__footer__copyright {
     display: flex;
@@ -28,5 +32,30 @@
         flex-direction: column;
         align-items: center;
         justify-self: center;
+        text-align: center;
+        font-size: 14px;
     }
+}
+
+@media (min-width: 768px) {
+    .site__footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .site__footer__copyright {
+        text-align: left;
+    }
+
+    .site__footer__privacy {
+        text-align: center;
+    }
+
+    .site__footer__offer {
+        text-align: right;
+    }
+
 }
