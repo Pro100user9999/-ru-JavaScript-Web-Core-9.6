@@ -76,8 +76,10 @@
  .swiper-slide3 {
   flex-shrink: 0;
   width: 100%;
+  max-width: 240px;
   height: 200px;
   box-sizing: border-box;
+  gap: 20px;
  }
 
  .grid-row3 {
@@ -118,6 +120,9 @@
  .swiper-button-next3 {
   color: #F8F8F8;
  }
+
+ 
+
 }
 
 @media (min-width: 768px) {
@@ -241,6 +246,10 @@
 
  .header-cell3 {
   color: #7E7E82;
+ }
+
+ .additional-info {
+  padding: 1rem;
  }
 }
 
