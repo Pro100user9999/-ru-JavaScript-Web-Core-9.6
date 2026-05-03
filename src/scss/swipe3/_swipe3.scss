@@ -51,6 +51,10 @@
   font-weight: 400;
   font-family: 'TT Lakes';
  }
+ .offer2 {
+  display: flex;
+  align-items: center;
+}
 
 @media (max-width: 767px) {
  .swiper3 {
@@ -77,7 +81,7 @@
   flex-shrink: 0;
   width: 100%;
   max-width: 240px;
-  height: 200px;
+  height: 190px;
   box-sizing: border-box;
   gap: 20px;
  }
@@ -91,6 +95,7 @@
   border-radius: 10px;
   background: #FFFFFF;
  }
+
 
  .swiper3 .grid-cell3 {
   border: none;
@@ -226,6 +231,7 @@
     justify-content: start;
 }
 
+
 .swipe__block3 .additional-info {
   position: static;
   clear: both;
@@ -239,7 +245,7 @@
     .swiper3 .swiper-scrollbar3 {
         display: none !important;
     }
-  .swiper3 .grid-cell3 img {
+  .swiper3 .grid-cell3 .order-btn {
   max-width: 100px;
   height: auto;
  }
