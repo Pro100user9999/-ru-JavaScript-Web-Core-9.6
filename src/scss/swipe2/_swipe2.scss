@@ -1,205 +1,183 @@
-
-
 .swipe__block2 {
-    display: grid;
-    padding: 2.5rem 1rem 0 2.2rem;
+  display: grid;
+  padding: 2.5rem 1rem 0 2.2rem;
 }
 
 .swipe_block_title2 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    color: #7E7E82;
-    font-size: 16px;
-    font-weight: 400;
-    padding: 16px;
-    text-transform: uppercase;
-    line-height: 24px;
-    font-family: 'TT Lakes';
-    background: #F8F8F8;
-
-
-
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #7e7e82;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 16px;
+  text-transform: uppercase;
+  line-height: 24px;
+  font-family: 'TT Lakes';
+  background: #f8f8f8;
 }
 
 .swiper2 {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    height: 150px;
-    display: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 150px;
+  display: none;
 }
 
 .swiper-wrapper2 {
-    height: 140px;
-    border-radius: 10px;
+  height: 140px;
+  border-radius: 10px;
 }
 
 .swiper-slide2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #F8F8F8;
-    color: rgb(5, 5, 5);
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f8f8;
+  color: rgb(5, 5, 5);
 }
 
 .swiper-button-prev2,
 .swiper-button-next2 {
-    color: #F8F8F8;
+  color: #f8f8f8;
 }
 
 .button__container2 {
-    display: none;
+  display: none;
 }
-
-
 
 @media (max-width: 767px) {
-    .swiper2 {
-        display: block;
-        height: 210px;
-        overflow: hidden;
-    }
+  .swiper2 {
+    display: block;
+    height: 210px;
+    overflow: hidden;
+  }
 
-    .swiper-wrapper2 {
-        display: flex;
-        height: 200px;
-        transition-property: transform;
-        box-sizing: content-box;
-    }
+  .swiper-wrapper2 {
+    display: flex;
+    height: 200px;
+    transition-property: transform;
+    box-sizing: content-box;
+  }
 
-    .swiper-slide2 {
-        flex-shrink: 0;
-        width: 100%;
-        height: 150px;
-        border-radius: 10px;
-    }
+  .swiper-slide2 {
+    flex-shrink: 0;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+  }
 
-    .swiper-slide2 img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;
-    }
-
+  .swiper-slide2 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
 }
-
 
 @media (min-width: 768px) {
-    .swiper2 {
-        display: grid !important;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 140px;
-        grid-auto-flow: row;
-        height: auto;
-        padding: 15px;
-        gap: 20px;
-    }
+  .swiper2 {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 140px;
+    grid-auto-flow: row;
+    height: auto;
+    padding: 15px;
+    gap: 20px;
+  }
 
-    .swiper-wrapper2 {
-        display: contents;
-        height: auto;
-    }
+  .swiper-wrapper2 {
+    display: contents;
+    height: auto;
+  }
 
-    .swiper-slide2 {
-        height: 140px;
-        border-radius: 10px;
-        justify-content: start;
-        align-items: center;
-    }
+  .swiper-slide2 {
+    height: 140px;
+    border-radius: 10px;
+    justify-content: start;
+    align-items: center;
+  }
 
-    .swiper-slide2 img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;
-    }
+  .swiper-slide2 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
 
+  .swiper-pagination2,
+  .swiper-button-prev2,
+  .swiper-button-next2,
+  .swiper-scrollbar2 {
+    display: none !important;
+  }
 
-    .swiper-pagination2,
-    .swiper-button-prev2,
-    .swiper-button-next2,
-    .swiper-scrollbar2 {
-        display: none !important;
-    }
+  .button__hidden2,
+  #arrowIcon2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    border: none;
+    vertical-align: middle;
+    background: none;
+  }
 
-    .button__hidden2,
-    #arrowIcon2 {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        margin: 0;
-        border: none;
-        vertical-align: middle;
-        background: none;
-    }
+  .button__container2 {
+    border: none;
+    display: flex;
+    padding: 15px;
+  }
 
-    .button__container2 {
-        border: none;
-        display: flex;
-        padding: 15px;
-    }
+  .swiper-slide2 {
+    display: flex !important;
+  }
 
-    .swiper-slide2 {
-        display: flex !important;
-    }
-
-    .hidden2 {
-        display: none !important;
-    }
-
+  .hidden2 {
+    display: none !important;
+  }
 }
 
-
 @media (min-width: 1024px) {
-    .swiper2 {
-        display: grid !important;
-        grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: 140px;
-        grid-auto-flow: row;
-        height: auto;
-        padding: 15px;
-    }
+  .swiper2 {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 140px;
+    grid-auto-flow: row;
+    height: auto;
+    padding: 15px;
+  }
 
-    .swiper-wrapper2 {
-        display: contents;
-        height: auto;
-    }
+  .swiper-wrapper2 {
+    display: contents;
+    height: auto;
+  }
 
-    .swiper-slide2 {
-        height: 140px;
-        border-radius: 10px;
-        justify-content: start;
-        align-items: center;
-    }
+  .swiper-slide2 {
+    height: 140px;
+    border-radius: 10px;
+    justify-content: start;
+    align-items: center;
+  }
 
-    .swiper-slide2 img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;
-    }
+  .swiper-pagination2,
+  .swiper-button-prev2,
+  .swiper-button-next2,
+  .swiper-scrollbar2 {
+    display: none !important;
+  }
 
-    .swiper-pagination2,
-    .swiper-button-prev2,
-    .swiper-button-next2,
-    .swiper-scrollbar2 {
-        display: none !important;
-    }
+  .button__hidden2,
+  #arrowIcon2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    border: none;
+    vertical-align: middle;
+    background: none;
+  }
 
-    .button__hidden2,
-    #arrowIcon2 {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        margin: 0;
-        border: none;
-        vertical-align: middle;
-        background: none;
-    }
-
-    .swiper-slide2 {
-        display: flex !important;
-    }
-
-    
-
-}   
+  .swiper-slide2 {
+    display: flex !important;
+  }
+}
