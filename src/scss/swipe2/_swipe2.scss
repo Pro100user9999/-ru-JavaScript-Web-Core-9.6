@@ -32,10 +32,19 @@
 
 .swiper-slide2 {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 240px;
+  height: 160px;
+  // justify-content: center;
+  // align-items: center;
   background: #f8f8f8;
   color: rgb(5, 5, 5);
+}
+.swiper2_icon {
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 .swiper-button-prev2,
