@@ -114,15 +114,7 @@
     padding: 20px;
   }
 
-  .swiper2_text {
-    display: block;
-    margin: 0;
-    font-size: 16px;
-    font-weight: 500;
-    color: #333;
-  }
-
-  .swiper2_btn {
+   .swiper2_btn {
     position: absolute;
     right: 20px;
     bottom: 20px;
@@ -146,9 +138,10 @@
     top: 20px;
     left: 20px;
     margin: 0;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
     color: #333;
+    white-space: nowrap;
   }
 }
 
@@ -213,6 +206,7 @@
   .hidden2 {
     display: none !important;
   }
+  
 }
 
 @media (min-width: 1024px) {

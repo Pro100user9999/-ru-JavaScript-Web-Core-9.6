@@ -80,7 +80,6 @@
  .swiper-slide3 {
   flex-shrink: 0;
   width: 100%;
-  max-width: 240px;
   height: 190px;
   box-sizing: border-box;
   gap: 20px;
@@ -249,6 +248,7 @@
   .swiper3 .grid-cell3 .order-btn {
   max-width: 100px;
   height: auto;
+  cursor: pointer;
  }
 
  .header-cell3 {
