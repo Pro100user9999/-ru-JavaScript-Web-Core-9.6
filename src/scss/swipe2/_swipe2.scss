@@ -26,25 +26,58 @@
 }
 
 .swiper-wrapper2 {
-  height: 140px;
-  border-radius: 10px;
+  display: flex;
+  max-width: 200px;
+  height: 200px;
+  transition-property: transform;
+  box-sizing: content-box;
 }
 
 .swiper-slide2 {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 240px;
-  height: 160px;
-  // justify-content: center;
-  // align-items: center;
-  background: #f8f8f8;
-  color: rgb(5, 5, 5);
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background: #fff;
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding: 20px;
 }
-.swiper2_icon {
+
+.swiper2_text {
+  display: block;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.swiper2_btn {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.swiper2_btn img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.swiper2_text {
   display: flex;
-  justify-content: end;
-  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
 }
 
 .swiper-button-prev2,
@@ -65,22 +98,57 @@
 
   .swiper-wrapper2 {
     display: flex;
+    max-width: 200px;
     height: 200px;
     transition-property: transform;
     box-sizing: content-box;
   }
 
   .swiper-slide2 {
-    flex-shrink: 0;
+    position: relative;
     width: 100%;
     height: 150px;
-    border-radius: 10px;
+    background: #fff;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 20px;
   }
 
-  .swiper-slide2 img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+  .swiper2_text {
+    display: block;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .swiper2_btn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .swiper2_btn img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .swiper2_text {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
   }
 }
 
@@ -139,6 +207,7 @@
 
   .swiper-slide2 {
     display: flex !important;
+    background: white;
   }
 
   .hidden2 {
@@ -188,5 +257,6 @@
 
   .swiper-slide2 {
     display: flex !important;
+    background: white;
   }
 }
