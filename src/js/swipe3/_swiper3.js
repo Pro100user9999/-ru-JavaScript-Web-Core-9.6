@@ -19,7 +19,8 @@ const initMobileSwiper3 = () => {
           wrapperClass: "swiper-wrapper3",
           slideClass: "swiper-slide3",
           slidesPerView: 1,
-          spaceBetween: 16,
+          slidesPerGroup: 1,
+          spaceBetween: 0,
           pagination: { el: ".swiper-pagination3", clickable: true },
           navigation: { nextEl: ".swiper-button-next3", prevEl: ".swiper-button-prev3" },
         });
