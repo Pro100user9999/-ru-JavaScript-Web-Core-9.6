@@ -3,6 +3,7 @@
   align-items: center;
   gap: 16px;
   margin-bottom: 34px;
+  padding: 18px 20px 0 20px;
 }
 
 .mobile-menu__logo {
@@ -27,6 +28,15 @@
   gap: 24px;
 }
 
+.mobile-menu__nav > :first-child {
+    border-left: 4px solid #41F6D7;
+    padding-left: 1.5rem;
+    
+}
+.mobile-menu__nav > *:not(:first-child) {
+    padding: 0 0 0 1.5rem;
+}
+
 .mobile-menu__link {
   position: relative;
   font-size: 16px;
@@ -44,6 +54,7 @@
 
 .mobile-menu__footer {
   margin-top: auto;
+  padding: 0 0 0 1.5rem;
 }
 
 .mobile-menu__actions,
@@ -97,7 +108,7 @@
   inset: 0 auto 0 0;
   z-index: 30;
   width: min(320px, 100vw);
-  padding: 18px 20px 32px;
+  
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -154,4 +165,5 @@
   .round-button--active:focus-visible {
     transform: scale(1.2);
   }
+  
 }
