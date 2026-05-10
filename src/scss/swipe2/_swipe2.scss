@@ -91,60 +91,55 @@
 
 @media (max-width: 767px) {
   .swiper2 {
-    display: block;
-    height: 210px;
-    overflow: hidden;
+    display: block !important;
+    width: 100%;
+    overflow: hidden !important;
+    padding: 0 !important;
   }
 
   .swiper-wrapper2 {
-    display: flex;
-    max-width: 200px;
-    height: 200px;
-    transition-property: transform;
-    box-sizing: content-box;
-    align-items: stretch;
+    display: flex !important;
   }
 
   .swiper-slide2 {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    min-width: 100vw !important;
+    flex-shrink: 0;
+    padding: 0 !important;
+    background: transparent !important;
+    height: auto !important;
+  }
+
+  .swiper2_card {
     position: relative;
-    width: 100%;
+    width: 315px;
+    max-width: calc(100vw - 40px);
     height: 150px;
+
     background: #fff;
     border-radius: 6px;
     box-sizing: border-box;
     padding: 20px;
   }
 
-   .swiper2_btn {
+  .swiper2_text {
+    display: block;
+    white-space: nowrap;
+  }
+
+  .swiper2_btn {
     position: absolute;
-    right: 50px;
+    right: 20px;
     bottom: 20px;
-    width: 48px;
-    height: 48px;
     padding: 0;
     border: none;
     background: transparent;
-    cursor: pointer;
-  }
-
-  .swiper2_btn img {
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-
-  .swiper2_text {
-    display: flex;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    margin: 0;
-    font-size: 18px;
-    font-weight: 500;
-    color: #333;
-    white-space: nowrap;
   }
 }
+
 
 @media (min-width: 768px) {
   .swiper2 {
